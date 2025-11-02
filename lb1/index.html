@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хімічні реакції та прогноз погоди</title>
+</head>
+<body>
+    <table width="100%" border="0" cellpadding="10">
+        <tr>
+            <td colspan="2" bgcolor="#4CAF50">
+                <h1 align="center"><font color="white">Лабораторна робота №1</font></h1>
+            </td>
+        </tr>
+        <tr>
+            <td width="12%" valign="top" bgcolor="#f0f0f0">
+                <!-- Навігаційне меню -->
+                <h1>Навігація</h1>
+                <ul>
+                    <li><a href="#chemistry">Хімічні реакції</a></li>
+                    <li><a href="#weather">Прогноз погоди</a></li>
+                    <li><a href="#form">Форма пошуку</a></li>
+
+                </ul>
+            </td>
+            
+            <td width="88%" id="chemistry" valign="top">
+                <!-- Основний контент -->
+                
+                <p>Хімічна реакція <b>ортофосфорної</b> кислоти:</p>
+                <p>P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O &rarr; 2H<sub>3</sub>PO<sub>4</sub></p>
+                
+                <h3>Розподіл групи за спеціальностями</h3>
+                <ol>
+                    <li><b>Спеціальність СП (Системне программування)</b>
+                        <ul>
+                            <li>Перша траєкторія &ndash; студенти 1-10</li>
+                            <li>Друга траєкторія &ndash; студенти 11-20</li>
+                        </ul>
+                    </li>
+                    <li><b>Спеціальність КСМ (Комп'ютерні системи та мережі)</b>
+                        <ul>
+                            <li>Перша траєкторія &ndash; студенти 1-12</li>
+                            <li>Друга траєкторія &ndash; студенти 13-24</li>
+                        </ul>
+                    </li>
+                    <li><b>Спеціальність КН (Комп'ютерні науки)</b>
+                        <ul>
+                            <li>Перша траєкторія &ndash; студенти 1-15</li>
+                            <li>Друга траєкторія &ndash; студенти 16-30</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <hr>
+                
+                <h3>Таблиця з даними прогнозу погоди</h3>
+                
+                <table border="1" cellpadding="5" id="weather" cellspacing="3" width="100%">
+                    <thead>
+                        <tr bgcolor="#cccccc">
+                            <th>№</th>
+                            <th>Дні</th>
+                            <th>Температура</th>
+                            <th>Погодні умови</th>
+                            <th>Вологість</th>
+                            <th>Вітер</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center">1</td>
+                            <td>Понеділок</td>
+                            <td>+15&deg;C / +8&deg;C</td>
+                            <td>Хмарно з проясненнями</td>
+                            <td>60%</td>
+                            <td>Південний, 5-7 м/с</td>
+                        </tr>
+                        <tr bgcolor="#f9f9f9">
+                            <td align="center">2</td>
+                            <td>Вівторок</td>
+                            <td>+12&deg;C / +6&deg;C</td>
+                            <td>Дощ</td>
+                            <td>85%</td>
+                            <td>Західний, 8-10 м/с</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td>Середа</td>
+                            <td>+10&deg;C / +4&deg;C</td>
+                            <td>Мінлива хмарність</td>
+                            <td>40%</td>
+                            <td>Північно-західний, 4-6 м/с</td>
+                        </tr>
+
+                        <tr bgcolor="#f9f9f9">
+                            <td align="center">4</td>
+                            <td>Четвер</td>
+                            <td>+14&deg;C / +7&deg;C</td>
+                            <td>Ясно</td>
+                            <td>20%</td>
+                            <td>Південно-східний, 3-5 м/с</td>
+                        </tr>
+                        <tr>
+                            <td align="center">5</td>
+                            <td>П'ятниця</td>
+                            <td>+16&deg;C / +9&deg;C</td>
+                            <td>Сонячно</td>
+                            <td>10%</td>
+                            <td>Східний, 2-4 м/с</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <hr>
+                
+                
+                <h3>Форма для пошуку</h3>
+                
+                <form action="#" id="form" method="get">
+                    <b>Пошук інформації</b>
+                        <p>
+                            <input type="text" id="search" name="search" size="25" placeholder="Пошук...">
+                            <input type="submit" value="Знайти">
+                        </p>
+                        
+                        <p>
+                            <label for="category">Категорія пошуку:</label><br>
+                            <select id="category" name="category">
+                                <option value="all">Усі категорії</option>
+                                <option value="chemistry">Хімія</option>
+                                <option value="weather">Погода</option>
+                                <option value="science">Наука</option>
+                            </select>
+                        </p>
+                        
+                        <p>
+                            <b>Тип контенту:</b><br>
+                            <input type="radio" id="articles" name="type" value="articles" checked>
+                            <label for="articles">Статті</label><br>
+                            <input type="radio" id="videos" name="type" value="videos">
+                            <label for="videos">Відео</label><br>
+                            <input type="radio" id="images" name="type" value="images">
+                            <label for="images">Зображення</label>
+                        </p>
+                        
+                        <p>
+                            <b>Додаткові параметри:</b><br>
+                            <input type="checkbox" id="recent" name="recent" value="recent">
+                            <label for="recent">Лише нові матеріали</label><br>
+                            <input type="checkbox" id="verified" name="verified" value="verified">
+                            <label for="verified">Тільки перевірені джерела</label>
+                        </p>
+                        
+                        <p>
+                            <label for="comments">Коментарі або побажання:</label><br>
+                            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                        </p>
+                        
+                        <p>
+                            <input type="reset" value="Очистити">
+                        </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
